@@ -1,0 +1,15 @@
+@mixin PlayfairDisplay ($size,$weight,$height,$spacing) {
+    font-family: 'Playfair Display',sans-serif;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height; 
+    letter-spacing: $spacing;      
+}
+
+@mixin Lato($size,$weight,$height,$spacing) {
+    font-family: 'Lato',sans-serif;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height; 
+    letter-spacing: $spacing;    
+}
