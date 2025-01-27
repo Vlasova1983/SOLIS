@@ -262,7 +262,7 @@ body,h1,h2,h3,h4,p{
   } 
 }  
  
-.nav {
+.nav {  
   display: flex;
   justify-content: flex-end;
   flex-grow: 1;  
@@ -379,6 +379,8 @@ body,h1,h2,h3,h4,p{
   }
 }
 
+
+
 .burger {
   display: none;
   @media screen and (max-width: 992px) {
@@ -467,7 +469,7 @@ body,h1,h2,h3,h4,p{
       &-dark{
         color: $dark-colot-text-accent;
       }
-    }
+    }    
   }
   &__text{
     @include Lato(18px,300,26px,0em);
@@ -1080,3 +1082,42 @@ body,h1,h2,h3,h4,p{
     gap: 32px;
   }
 }
+
+.btn__up {
+  position: fixed;
+  right: calc(50vw - calc($adaptive_width_container + 100px));
+  top:calc(100vh - 5%);
+
+  @media screen and (max-width: 992px) {
+    right: calc(50vw - calc($adaptive_width_container - 20%));
+  }
+
+  @media screen and (max-width: 768px) {
+    right:0;
+  } 
+  
+  
+  @media screen and (max-width: 992px) {
+     display: flex;
+     flex-grow: 1;
+     justify-content: flex-end;
+     padding-right: 15px;
+  }
+  &-icon{
+    fill: $light-main-colot-text;
+    &-dark{
+      fill: $dark-main-colot-text;
+    }    
+  }
+  
+  &-link:hover &-icon{
+    fill:$light-colot-line-menu;
+    cursor: pointer;
+  }
+  &-link-dark:hover &-icon{
+    fill:$dark-colot-line-menu;
+    cursor: pointer;
+  }
+}
+// ------------------------------------
+

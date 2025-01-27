@@ -1350,3 +1350,47 @@ body, h1, h2, h3, h4, p {
           align-items: center;
   gap: 32px;
 }
+
+.btn__up {
+  position: fixed;
+  right: calc(50vw - 685px);
+  top: calc(100vh - 5%);
+}
+@media screen and (max-width: 992px) {
+  .btn__up {
+    right: calc(50vw - (585px - 20%));
+  }
+}
+@media screen and (max-width: 768px) {
+  .btn__up {
+    right: 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .btn__up {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-right: 15px;
+  }
+}
+.btn__up-icon {
+  fill: #262A3F;
+}
+.btn__up-icon-dark {
+  fill: white;
+}
+.btn__up-link:hover .btn__up-icon {
+  fill: #F1897B;
+  cursor: pointer;
+}
+.btn__up-link-dark:hover .btn__up-icon {
+  fill: #53F3CD;
+  cursor: pointer;
+}
